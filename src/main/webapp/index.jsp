@@ -90,7 +90,8 @@
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
-                <input type="submit" value="Sign Up">
+                <input type="radio"> Remember Password
+		<input type="submit" value="Sign Up">
             </form>
             <div class="toggle-button" onclick="toggleForm()">Already have an account? Login</div>
         </div>
