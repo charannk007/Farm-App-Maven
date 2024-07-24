@@ -1,99 +1,106 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login & Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive HTML Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
+            background: linear-gradient(to right, #c3d3a3, #bcc6d6);
+            color: #140c1d;
             font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
         }
-        .container {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 400px;
+        .navbar {
+            background-color: #25be41;
+        }
+        .navbar a {
+            color: #b20caf !important;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #add1bc;
+        }
+        .sidebar {
+            background-color: #0b87b8;
+            padding: 15px;
+            position: fixed;
+            top: 56px;
+            bottom: 0;
+            width: 200px;
+        }
+        .sidebar a {
+            color: #aaed25;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #600707;
+        }
+        .content {
+            margin-left: 220px;
             padding: 20px;
         }
-        h2 {
+        footer {
+            background-color: #2f9615;
+            color: #161312;
             text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input[type="text"], input[type="password"], input[type="email"] {
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        input[type="submit"] {
-            background: #5cb85c;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 4px;
-            margin-top: 20px;
-        }
-        input[type="submit"]:hover {
-            background: #4cae4c;
-        }
-        .toggle-button {
-            text-align: center;
-            margin-top: 20px;
-            color: #5cb85c;
-            cursor: pointer;
-        }
-        .toggle-button:hover {
-            text-decoration: underline;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
-    <script>
-        function toggleForm() {
-            var loginForm = document.getElementById('loginForm');
-            var signupForm = document.getElementById('signupForm');
-            if (loginForm.style.display === 'none') {
-                loginForm.style.display = 'block';
-                signupForm.style.display = 'none';
-            } else {
-                loginForm.style.display = 'none';
-                signupForm.style.display = 'block';
-            }
-        }
-    </script>
 </head>
 <body>
-    <div class="container">
-        <div id="loginForm">
-            <h2>Login</h2>
-            <form action="loginServlet" method="post">
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <input type="submit" value="Login">
-            </form>
-            <div class="toggle-button" onclick="toggleForm()">Don't have an account? Sign up</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="signupForm" style="display: none;">
-            <h2>Sign Up</h2>
-            <form action="signupServlet" method="post">
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
-                <input type="submit" value="Sign Up">
-            </form>
-            <div class="toggle-button" onclick="toggleForm()">Already have an account? Login</div>
-        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
     </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>About Me: Charan NK</h1>
+        <p>Junior Devops Engineer</p>
+        <p>Training @ Star-Agile</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Charan-NK</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
