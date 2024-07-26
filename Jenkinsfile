@@ -13,7 +13,7 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Build the Project') {
             steps {
                 script {
                     echo "Maven Home: ${env.MAVEN_HOME}"
