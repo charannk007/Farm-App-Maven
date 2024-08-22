@@ -97,6 +97,14 @@
         <p>From India</p>
 biodupated 
     </div>
+<br>
+   <div class="content">
+        <h1>About Me: Charan NK</h1>
+        <p>Junior Devops Engineer</p>
+        <p>Training @ Star-Agile</p>
+        <p>From India</p>
+<h1> biodupated </h1> 
+    </div>
 
     <!-- Footer -->
     <footer>
