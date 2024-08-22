@@ -94,6 +94,7 @@
         <h1>About Me: Charan NK</h1>
         <p>Junior Devops Engineer</p>
         <p>Training @ Star-Agile</p>
+        <p>From India</p>
     </div>
 
     <!-- Footer -->
