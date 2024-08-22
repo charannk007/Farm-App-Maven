@@ -95,6 +95,7 @@
         <p>Junior Devops Engineer</p>
         <p>Training @ Star-Agile</p>
         <p>From India</p>
+biodupated 
     </div>
 
     <!-- Footer -->
